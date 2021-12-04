@@ -1,3 +1,4 @@
 # credit_risk_calculator
 
-[yapalskz.pythonanywhere.com](http://yapalskz.pythonanywhere.com)
+User-friendly interface can be found here:
+- [yapalskz.pythonanywhere.com](http://yapalskz.pythonanywhere.com)
