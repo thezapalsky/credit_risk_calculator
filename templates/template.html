@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body bgcolor=#123456>
+		<center>
+			<h1 style="color:#ffffff; font-family:Roboto;">Klasyfikacja binarna na danych kredytowych</h1>
+
+			<form method="POST", action="{{url_for('home')}}">
+				👀<input type="text", name='a', placeholder="Age"><br>
+
+				🚺<input list="gender_list", name="b", placeholder="Sex"><br>
+					<datalist id="gender_list">
+					    <option value="male">
+					    <option value="female">
+					</datalist>
+<!-- 				<select name="b" id="cars">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				</select> -->
+
+				💼<input list="job", name="c", placeholder="Job"><br>
+					<datalist id="job">
+					    <option value="0 - unskilled and non-resident">
+					    <option value="1 - unskilled and resident">
+					    <option value="2 - skilled">
+					    <option value="3 - highly skilled">
+					</datalist>
+
+				🏡<input list="housing", name="d", placeholder="Housing"><br>
+					<datalist id="housing">
+					    <option value="own">
+					    <option value="free">
+					    <option value="rent">
+					</datalist>
+
+				💰<input list="sa", name="e", placeholder="Saving accounts"><br>
+					<datalist id="sa">
+					    <option value="little">
+					    <option value="moderate">
+					    <option value="quite rich">
+					    <option value="rich">	
+					</datalist>
+
+				💳<input list="ca", name="f", placeholder="Checking account"><br>
+					<datalist id="ca">
+					    <option value="little">
+					    <option value="moderate">
+					    <option value="rich">
+					</datalist>
+
+				🪜<input type="text", name='g', placeholder="Credit Amount"><br>
+
+				⏳<input type="text", name='h', placeholder="Duration"><br>
+
+				🎯<input list="purpose", name='i', placeholder="Purpose"><br>
+					<datalist id="purpose">
+					    <option value="car">
+					    <option value="radio/TV">
+					    <option value="furniture/equipment">
+					    <option value="business">
+					    <option value="education">
+					    <option value="repairs">
+					    <option value="vacation/others">
+					    <option value="domestic appliances">
+					</datalist>
+
+				<input type="submit", value='Calculate Risk 💸'>
+			</form>
+
+		</center>
+	</body>
+</html>

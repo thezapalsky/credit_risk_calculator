@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <!-- <h1>Your parameters are:</h1>
+    {% for n in data %}
+        <li>{{n}}</li>
+        {% endfor %} -->
+
+    
+    
+    {% if(data[9]==0) %}
+    <body bgcolor=#D2222D>
+        <center>
+            {% print(data) %}<br>
+            <h1 style="color:#ffffff; font-family:Roboto;">Wynik: bad ❌</h1>
+            <a href='/'>go back to home page</a>
+        </center>
+
+    </body>
+    {% elif(data[9]==1) %}
+    <body bgcolor=#238823>
+        <center>
+            {% print(data) %}<br>
+            <h1 style="color:#ffffff; font-family:Roboto;">Wynik: good ✅</h1>
+            <a href='/'>go back to home page</a>
+        </center>
+
+    </body>
+    {% else %}
+    <h1>error</h1>
+    {% endif%}
+
+
+</html>
